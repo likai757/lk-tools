@@ -2,7 +2,6 @@ os:
 - osx
 language: node_js
 node_js:
-- node
 - '8'
 install:
 - npm install
@@ -15,8 +14,8 @@ branches:
 deploy:
   provider: npm
   email: likai757@gmail.com
+  api_key:
+    secure: m1ILxvj+/z7Mr5QzpGOXCOs28anornxIvyzYfEgx8gQwzPIcTn1fttUXqb8fz28E19cWxNdVggOduFrPewcRmwddOdcBdnqwXPTLcQaKMlKP0FTse9AEta2vPco7MEAHMPA5JWAIxgAMnC7jRQfv+JI65t+hVA1nSdWRCkeYv7elyXqs16sncqnKsYLnak8cQ4ym5IM0RcSm17BKQwrqyhwbdIye9srIOi98JEiwimZh/0Divtg3DdDTLgl4TvUpqFOtNfifDcpdB81wlLiXlK/aXB0e5+FJqGf0tA3XmNDl3CC//Exu/w9ql7Vp6pxEV/rvZX1Frbf0547GnIGjV3a1p1mO0ohs9dW9JzIW8YRvlISKDShD7iMiVPaU7+B3XTttHjXKAjWHvhfZFiYINZJJBQYMghtmp4/sVTspYmGe6jJQi3kwPF6a5SYIkGuGgWswpsjs8nLCAC0IgcibsKjpCYWpbzJbs5lKbQe7i6dxbQt5s+EI+vsEG8NQCckk8LFN22dr7tBD3tvULm9UVcw+v4zQcnY1UvL3TW27oAV4XZFitZkmO19V17dkjKhRYQngcZJ9Pn1v0OxBIyTwD716DELg7JVdJWFiXphA8w3xc0RZ3IzM5IPunwxmDQCDauWCjIgHSQj2PT19iwj9Gao0+oMVhLSDcPWDVbNr86I=
   on:
     tags: true
-    all_branches: true
-  api_key:
-    secure: b/O8T+NuCEkGsKo192rQ4nAcPMRLAffDgILIuoz9V0Gpo9k0nidDguNKi2JcTnHeoej12Y6FZHcT9NGtoK2BZ/LamdpTw1ssS0BjHaDPhnpuSbZ+edUXSfbhoY+qtEAy2gvNuIz2IlyJ/bfkX15qq2ZoEsBzHEh9hX26/su9Jm2m7vxwlJfjklBDKa3dq9F93mn3hcUeddJyZypEHJ+RbiZHuHRQ9/eySzcudLaAfi7LwzaBpe869UP/5fdk/wt+QTVn3lBv0cDlVIZskKICVW3paLiV/ksERI/6m7GNheRamy/kHDcXWFkN9MJp5NjVVeFfpP+cdLrsz+vp6xEJJHegkRzfxurt8SLwnpYnlf+KkgeiUB5+CzBxVXGb9PARrlL28igsqdfIE9vuqkmDOBACXFa4y4LhxAIXq9HRnmiQeWhw8aTZdn4Z+JZTo7EXcHdsFViaEBAlRvwQh8HVkyvgBEcCIdPEJgpIwGsEssxYYwbsSFBDTFBso3uU+Qv86crWHTItnXreSf+BQ6iYbaIaRxvpgiksETYoAp6p6FHDPBcIT6mTIVK5METAfyHpa3XdLQViGIHq/zeFP5rgLOrkx/AxPC/3FrtdNwVS2Y/5peULlU6olC0H9PPPwkLd0hI0TUiPdsk0NToNubQOkbXHCBGmOZrncvOZkSewaO8=
+    repo: likai757/lk-tools
