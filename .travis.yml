@@ -13,6 +13,8 @@ branches:
   only:
   - master
 deploy:
+  provider: npm
+  email: "likai757@gmail.com"
   on:
     tags: true
     all_branches: true
