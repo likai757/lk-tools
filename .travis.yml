@@ -1,16 +1,20 @@
 os:
-  - osx
+- osx
 language: node_js
 node_js:
-  - "node"
-  - "8"
-before_install:
-  - npm install -g npm
+- node
+- '8'
 install:
-  - npm install
+- npm install
 script:
-  - npm run build
-  - npm run publish2npm
+- npm run build
+- npm run publish2npm
 branches:
   only:
-    - master
+  - master
+deploy:
+  on:
+    tags: true
+    all_branches: true
+  api_key:
+    secure: j5osrGAr+bfIVXkBQg5dwiNEsXNCjIPkJl6teQWJ+wc1gglBAz97Fm60SGKRP1uBIcc8fiBsCw+LnSFzUvS27x70YtoM6XqTnNDOi4om8sAXCFTd6I3kE2PS4VHtvpx/xInfs5r0U1gGJIwDcnp4O2I8Iruv/ewjhaqvZHivimL0Wmr2qO2ockJQcH3iV5HQ7ApkBe+gLLfC2JRrVCHeSRVAD1JylB4iUBU/EbDkKbAwiMAYbr8sfYzhpgGiPwI3G+mFHaOtob/iLYiNJr1YZzIp4gq3M+sKX7zcXpWtxn/HnwXEEYgkrXabZlOL5yr64hxDRAoscQgjjTnBNDQTJlxjjrD4+m2ukEWfNBp4wvUxTs353OF7W0eWwsBgpSR26eo2Dq7yCKabg4hrRNYLbpgebA/LBMbrNJzXMAZHSMmvBjDiz4noIsJD/a2fEIRoiy82hSSPWs4yZn/CkLTQo5WSTO6/eMLIvR103RoEbRE+OQt9rRcpDGnkKW8rckDRH5bWCQFavl04ZxZD7TTlCkEU2LKOaBCYYJYcyECEW/3UuX5y6xBjBQzmWmJnZwM93lyT3AbBJzyhtCqx5gPCRG7iDoodUFvxcs6k4uGPBl93iT41p9P1SFI4IpBI8rdo5mo4RX+kqY6Z8sDgl/b0LRJzT0OhGIqSq3Bcv3vDifM=
