@@ -1,7 +1,7 @@
 /**************************************************
  * Created by kaili on 2017/9/4 下午6:26.
  **************************************************/
-export default class KMath {
+export default class LMath {
 
   constructor (val) {
     this.val = val || 0

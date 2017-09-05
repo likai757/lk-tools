@@ -1,0 +1,16 @@
+os:
+  - osx
+language: node_js
+node_js:
+  - "node"
+  - "8"
+before_install:
+  - npm install -g npm
+install:
+  - npm install
+script:
+  - npm run build
+  - npm run publish2npm
+branches:
+  only:
+    - master
