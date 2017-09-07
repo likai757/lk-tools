@@ -24,5 +24,5 @@ test('测试乘法', () => {
 test('测试除法', () => {
   let math = new KMath(100)
   let val = math.divide(50).value()
-  expect(val).toEqual(2)
+  expect(val).toEqual(20)
 })
