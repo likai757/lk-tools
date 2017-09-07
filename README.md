@@ -1,4 +1,5 @@
 # lk-tools 
-\[!\[Build Status](https://travis-ci.org/smallmuou/travis-ci-tutorial.svg?branch=master)](https://travis-ci.org/smallmuou/travis-ci-tutorial)
+
+[![Build Status](https://travis-ci.org/likai757/lk-tools.svg?branch=master)](https://travis-ci.org/likai757/lk-tools)
 
 popular math tools

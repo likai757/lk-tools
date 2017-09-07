@@ -8,7 +8,7 @@ before_install:
 install:
 - npm install
 script:
-- echo $NPM_TOKEN
+- npm test
 - npm run build
 - npm run publish2npm
 branches:

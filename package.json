@@ -1,6 +1,6 @@
 {
   "name": "lk-tools",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "popular math tools",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
   },
   "dependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "mkdir -p lib && babel ./src -d ./lib",
     "publish2npm": "mkdir -p build && cp -R package.json README.md lib build && npm publish ./build"
   }
