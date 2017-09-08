@@ -30,7 +30,7 @@
   "dependencies": {},
   "scripts": {
     "test": "jest",
-    "build": "npm test && mkdir -p lib && babel ./src -d ./lib",
+    "build": "mkdir -p lib && babel ./src -d ./lib",
     "publish2npm": "mkdir -p build && cp -R package.json README.md lib build && npm publish ./build"
   }
 }
