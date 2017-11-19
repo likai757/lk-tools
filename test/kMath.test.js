@@ -1,7 +1,7 @@
 /**************************************************
  * Created by kaili on 2017/9/4 下午6:28.
  **************************************************/
-import KMath from '../src/KMath'
+import KMath from '../src/Math/kMath'
 
 test('测试加法', () => {
   let math = new KMath(100)

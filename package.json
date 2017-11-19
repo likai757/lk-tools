@@ -27,10 +27,16 @@
     "babel-preset-stage-0": "^6.24.1",
     "jest": "^21.0.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "crawler": "^1.1.1",
+    "ink-docstrap": "^1.3.2",
+    "jsdoc": "^3.5.5"
+  },
   "scripts": {
     "test": "jest",
+    "babel": "babel-node src/Crawler/kCrawler.js",
     "build": "mkdir -p lib && babel ./src -d ./lib",
+    "jsdoc": "jsdoc -c ./jsdoc.conf.json -t ./node_modules/ink-docstrap/template -R README.md -r ./src",
     "publish2npm": "mkdir -p build && cp -R package.json README.md lib build && npm publish ./build"
   }
 }
