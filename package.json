@@ -36,7 +36,7 @@
     "test": "jest",
     "babel": "babel-node src/Crawler/kCrawler.js",
     "build": "mkdir -p lib && babel ./src -d ./lib",
-    "jsdoc": "jsdoc -c ./jsdoc.conf.json -t ./node_modules/ink-docstrap/template -R README.md -r ./src",
+    "jsdoc": "jsdoc -c ./jsdoc.conf.json -t ./node_modules/ink-docstrap/template -R README.md -r ./src && open ./out/index.html",
     "publish2npm": "mkdir -p build && cp -R package.json README.md lib build && npm publish ./build"
   }
 }

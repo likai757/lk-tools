@@ -1,7 +1,7 @@
 var Crawler = require('crawler')
 
 /**
- * 爬虫获取网页Title
+ * 爬虫获取网页标题
  * @module Crawler
  */
 var c = new Crawler({
