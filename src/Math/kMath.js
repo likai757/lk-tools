@@ -4,33 +4,38 @@
 
 /**
  * 数学函数计算
- * @module kMath
  */
 export default class kMath {
   /**
-   * 构建一个数学计算实例
-   * @param val
+   * @ignore
    */
-  constructor (val) {
+  constructor(val) {
     this.val = val || 0
   }
 
   /**
-   * 加法
-   * @param 加数
-   * @returns {kMath}
+   * 调用add方法，在原有value加上新的数值
+   *
+   * @example
+   * new kMath(1).add(1).value();
+   * // returns 2
+   *
+   * @param {number} val=0 与kMath实例的Value相加的值.
+   * @return {kMath} kMath实例.
    */
-  add (val) {
+  add(val) {
     this.val += val
     return this
   }
 
   /**
-   * 减法
-   * @param 减数
+   * 调用subtract方法，在原有value减去新的数值
+   *
+   * @default [val=undefined]
+   * @param {number} val - 与kMath实例的Value相减的值.
    * @returns {kMath}
    */
-  subtract (val) {
+  subtract(val) {
     this.val -= val
     return this
   }
@@ -40,7 +45,7 @@ export default class kMath {
    * @param 乘数
    * @returns {kMath}
    */
-  multiply (val) {
+  multiply(val) {
     this.val *= val
     return this
   }
@@ -50,7 +55,7 @@ export default class kMath {
    * @param 除数
    * @returns {kMath}
    */
-  divide (val) {
+  divide(val) {
     if (val !== 0) {
       this.val /= val
     }
@@ -61,7 +66,7 @@ export default class kMath {
    * 取值
    * @returns {kMath}
    */
-  value () {
+  value() {
     return this.val
   }
 

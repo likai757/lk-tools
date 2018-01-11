@@ -7,3 +7,5 @@ build
 .idea/
 coverage
 out
+docs
+/docs
